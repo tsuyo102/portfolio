@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Box } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Top from "./views/Top";
-import TvModal from "./components/TvModal";
+import Modal from "./components/Modal";
 
 function App() {
   return (
     <Router basename="/portfolio">
-      <TvModal />
+      <Modal />
       <Routes>
         <Route path="/" element={<Top />} />
         <Route path="*" element={<div>404</div>} />

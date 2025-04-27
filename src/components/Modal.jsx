@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box } from "@mui/material";
-import ModalChangeButton from "./button/ModalChangeButton";
+import ModalChangeButton from "./Button/ModalChangeButton";
 
-const TvModal = () => {
+const Modal = () => {
   const [modal, setModal] = useState(false);
   const onClickModal = () => {
     setModal(!modal);
@@ -14,4 +14,4 @@ const TvModal = () => {
   );
 };
 
-export default TvModal;
+export default Modal;
